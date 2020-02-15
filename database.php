@@ -20,10 +20,7 @@ class Database
         $this->conn = mysqli_connect($this->server,$this->user,$this->pass, $this->db);
         if(mysqli_connect_error()){
             echo "Error:" . mysqli_connect();
-        }
-         else {
-            echo "Si nos conectamos a la base de datos";
-        }
+        } 
         return $this->conn;
     }
 }
